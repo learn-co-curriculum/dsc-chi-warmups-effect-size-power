@@ -15,11 +15,24 @@
 
 '''
 1)
+Effect size quantifies the difference between two values under scrutiny.  We want to have a measure of this separate from
+p-value, because p-value increases as sample size increases.  
 
+In other words, in some sense a p-value can be specified with a large enough sample size.  We want to be able to quantify
+a difference between two values even if they are deemed "significant" in order to help mitigate this effect.
 
 
 2)
+alpha - the point at which we deem a test statistic to be significantly different from chance that it provides evidence against
+the null hypothesis.  This relates to power in that power is the rate at which we reject the null hypothesis when it is false,
+and so alpha is the "starting point" at which we determine whether the null hypothesis should be counted as "false"
 
+sample size - the larger the sample size, the more power a given test has.  With an increased number of points, a measurement
+erroneously accepting the null when it should be rejected is less likely.
+
+effect size - as a measurement of how "different" two samples are, this reflects the underlying reality of whether or not 
+a null hypothesis should be rejected.  Since power is a measure of how frequently the null hypothesis is accepted when it should
+be rejected, a smaller effect size means a higher power is required to accurately reject null hypotheses at a given rate.
 
 '''
 ```
